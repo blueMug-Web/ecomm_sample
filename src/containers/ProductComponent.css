@@ -1,0 +1,22 @@
+.card {
+	/* min-height: 100px; */
+	height:min-content;
+	max-height: 100%;
+}
+.title {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.image {
+	background-size: contain;
+}
+#card-content {
+	height:min-content;
+}
+
+#card-button {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
