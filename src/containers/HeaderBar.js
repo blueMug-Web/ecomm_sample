@@ -7,8 +7,8 @@ const HeaderBar = () => {
 		<>
 			<Menu>
 				<h1>FakeMart</h1>
-
-				<Menu className="ui hidden section right aligned">
+				{/* <Menu className="ui hidden section right aligned"> */}
+				<Menu className="ui fluid stackable menu">
 					<Button animated>
 						<Button.Content className="small" visible>
 							Login

@@ -23,7 +23,7 @@ function App() {
 						path="/mens-clothing/product/"
 						exact
 						element={
-							<div className="ui grid container">
+							<div className="ui stackable grid container">
 								<MensClothing />
 							</div>
 						}
@@ -32,7 +32,7 @@ function App() {
 						path="/womens-clothing/product/"
 						exact
 						element={
-							<div className="ui grid container">
+							<div className="ui stackable grid container">
 								<WomensClothing />
 							</div>
 						}
@@ -41,7 +41,7 @@ function App() {
 						path="/jewellery/product/"
 						exact
 						element={
-							<div className="ui grid container">
+							<div className="ui stackable grid container">
 								<Jewellery />
 							</div>
 						}
@@ -50,7 +50,7 @@ function App() {
 						path="/electronics/product/"
 						exact
 						element={
-							<div className="ui grid container">
+							<div className="ui stackable grid container">
 								<Electronics />
 							</div>
 						}

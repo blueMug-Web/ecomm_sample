@@ -22,7 +22,9 @@ const ProductListing = () => {
 		fetchProducts();
 	}, []);
 
-	return <div className="ui grid container">{<ProductComponent />}</div>;
+	return (
+		<div className="ui stackable grid container">{<ProductComponent />}</div>
+	);
 };
 
 export default ProductListing;
