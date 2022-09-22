@@ -8,6 +8,8 @@ import MensClothing from "./containers/MensClothing";
 import WomensClothing from "./containers/WomensClothing";
 import Jewellery from "./containers/Jewellery";
 import Electronics from "./containers/Electronics";
+import Cart from "./containers/Cart";
+import Checkout from "./containers/Checkout";
 
 function App() {
 	const location = useLocation();
@@ -17,13 +19,20 @@ function App() {
 			<div className="ui product-container">
 				<Routes key={location.pathname} location={location}>
 					<Route path="/" exact element={<Layout />} />\
-					<Route index element={<ProductListing />} />
+					<Route
+						index
+						element={
+							<div className="products-container">
+								<ProductListing />
+							</div>
+						}
+					/>
 					<Route path="/product/:productId" exact element={<ProductDetail />} />
 					<Route
 						path="/mens-clothing/product/"
 						exact
 						element={
-							<div className="ui stackable grid container">
+							<div className="ui stackable grid ">
 								<MensClothing />
 							</div>
 						}
@@ -32,7 +41,7 @@ function App() {
 						path="/womens-clothing/product/"
 						exact
 						element={
-							<div className="ui stackable grid container">
+							<div className="ui stackable grid ">
 								<WomensClothing />
 							</div>
 						}
@@ -41,7 +50,7 @@ function App() {
 						path="/jewellery/product/"
 						exact
 						element={
-							<div className="ui stackable grid container">
+							<div className="ui stackable grid">
 								<Jewellery />
 							</div>
 						}
@@ -50,11 +59,13 @@ function App() {
 						path="/electronics/product/"
 						exact
 						element={
-							<div className="ui stackable grid container">
+							<div className="ui stackable grid ">
 								<Electronics />
 							</div>
 						}
 					/>
+					<Route path="/cart" exact element={<Cart />} />
+					<Route path="/checkout" exact element={<Checkout />} />
 					<Route
 						path="/mens-clothing/product/:productId"
 						exact

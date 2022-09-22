@@ -1,0 +1,29 @@
+.menuIcon{
+    font-size: 20px;
+    
+}
+.dropdownMenuItems{
+    font-size: 10px;
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height:fit-content;
+    /* margin-right: 2em; */
+   margin: auto 10px;
+   
+}
+.title-link{
+    text-decoration: none;
+}
+.title-text{
+    font-size: 2em;
+    
+}
+
+.button{
+    min-width: 8em;
+    max-width: 10em;
+    margin: 2em;
+}
